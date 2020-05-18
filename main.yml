@@ -4,7 +4,7 @@
   gather_facts: false
   become: true
   tasks:
-    name: Copy the index.html
-    copy:
-      src: index.html 
-      dest: /var/www/html/
+    - name: Copy the index.html
+      copy:
+        src: index.html 
+        dest: /var/www/html/
