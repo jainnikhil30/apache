@@ -2,6 +2,7 @@
 # tasks file for apache
 - hosts: all
   gather_facts: false
+  become: true
   tasks:
     name: Copy the index.html
     copy:
